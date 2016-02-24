@@ -1,0 +1,109 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div id="wrapper">
+        <div class="form-modal active" id="signin">
+            <div class="header">
+            </div>
+            <div class="form-content">
+                <form action="#" id="signin-form" class="form" method="get">
+                    <span class="loader">
+                        <span class="holder">
+                            <span class="one"></span>
+                        </span>
+                    </span>
+                    <div class="input">
+                        <i class="icon-title110"></i>
+                        <input type="email" class="form-control required-email" name="email" placeholder="Email address" >
+                        <span class="alert">The Email address is invalid</span>
+                    </div>
+                    <div class="input">
+                        <i class="icon-title133"></i>
+                        <input type="password" class="form-control required" name="password" placeholder="Password" >
+                        <span class="alert">The Password is required</span>
+                    </div>
+                    <p class="align-right">
+                        <a href="#forgot" class="forgot changeBtn">Forgot Password?</a>
+                    </p>
+                    <button class="big-btn btn-orange" type="submit">Login</button>
+                    <span class="add-info">Don't have an account? <a href="#signup" class="changeBtn">Signup</a></span>
+                </form>
+            </div>
+        </div>
+        <div class="form-modal" id="forgot">
+            <div class="header">
+                <a href="#signin" class="closeBtn">x</a>
+            </div>
+            <div class="form-content">
+                <form action="#" id="forgot-password" class="form" method="get">
+                    <span class="loader">
+                        <span class="holder">
+                            <span class="one"></span>
+                        </span>
+                    </span>
+                    <div class="input">
+                        <i class="icon-title110"></i>
+                        <input type="email" class="form-control required-email" name="email" placeholder="Email address" >
+                        <span class="alert">The Email address is invalid</span>
+                    </div>
+                    <button class="big-btn btn-orange" type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+        <div class="form-modal" id="signup">
+            <div class="header">
+                <a href="#signin" class="closeBtn">x</a>
+            </div>
+            <div class="form-content">
+                <form action="#" id="signup-form" class="form" method="get">
+                    <span class="loader">
+                        <span class="holder">
+                            <span class="one"></span>
+                        </span>
+                    </span>
+                    <div class="input">
+                        <i class="icon-title108"></i>
+                        <input type="text" class="form-control required" name="name" placeholder="Name" >
+                        <span class="alert">The Name is required</span>
+                    </div>
+                    <div class="input">
+                        <i class="icon-title039"></i>
+                        <input type="text" class="form-control required" name="username" placeholder="Username" >
+                        <span class="alert">The Username is required</span>
+                    </div>
+                    <div class="input">
+                        <i class="icon-title110"></i>
+                        <input type="email" class="form-control required-email" name="email" placeholder="Email address" >
+                        <span class="alert">The Email address is invalid</span>
+                    </div>
+                    <div class="input">
+                        <i class="icon-title133"></i>
+                        <input type="password" id="password" class="form-control require-password" name="password" placeholder="Password" >
+                        <span class="alert">The Password is required</span>
+                    </div>
+                    <div class="input">
+                        <i class="icon-title133"></i>
+                        <input type="password" id="confirm-password" class="form-control require-password" placeholder="Confirm Password" >
+                        <span class="alert">Confirm Password is required</span>
+                    </div>
+                    <div class="input">
+                        <input type="checkbox" placeholder="Terms&amp;Conditions" class="required-checkbox">
+                        Accept <a target="_blank" class="terms" href="http://artworktool.com/page/terms-of-use">Terms and conditions</a>
+                    </div>
+                    <span class="password-alert">Passwords do not match</span>
+                    <button class="big-btn btn-orange" type="submit">Register</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
