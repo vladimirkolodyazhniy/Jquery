@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div id="wrapper">
+        <div class="register-form">
+            <div class="header">
+                <div class="logo"><img class="placeholder" src="http://lucidity.design/wp-content/uploads/2016/08/logo-placeholder.png"></div>
+            </div>
+            <div class="form-content">
+                <form action="#" class="form validation-form" method="get">
+                    <span class="loader">
+                        <span class="holder">
+                            <span class="one"></span>
+                        </span>
+                    </span>
+                    <div class="input">
+                        <i class="fa fa-address-card"></i>
+                        <input type="text" class="form-control required" name="name" placeholder="Name" >
+                        <span class="alert">The Name is required</span>
+                    </div>
+                    <div class="input">
+                        <i class="fa fa-user"></i>
+                        <input type="text" class="form-control required" name="username" placeholder="Username" >
+                        <span class="alert">The Username is required</span>
+                    </div>
+                    <div class="input">
+                        <i class="fa fa-envelope"></i>
+                        <input type="email" class="form-control required-email" name="email" placeholder="Email address" >
+                        <span class="alert">The Email address is invalid</span>
+                    </div>
+                    <div class="input">
+                        <i class="fa fa-lock"></i>
+                        <input type="password" id="password" class="form-control require-password" name="password" placeholder="Password" >
+                        <span class="alert">The Password is required</span>
+                    </div>
+                    <div class="input">
+                        <i class="fa fa-lock"></i>
+                        <input type="password" id="confirm-password" class="form-control require-password" placeholder="Confirm Password" >
+                        <span class="alert">Confirm Password is required</span>
+                    </div>
+                    <div class="input">
+                        <input type="checkbox" placeholder="Terms&amp;Conditions" class="required-checkbox">
+                        Accept <a target="_blank" class="terms" href="#">Terms and conditions</a>
+                    </div>
+                    <span class="password-alert">Passwords do not match</span>
+                    <button class="big-btn btn-orange" type="submit">Register</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
